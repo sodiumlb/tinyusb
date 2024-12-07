@@ -1303,7 +1303,7 @@ static void process_removing_device(uint8_t rhport, uint8_t hub_addr, uint8_t hu
 
 enum {
   ENUM_RESET_DELAY_MS = 50,       // USB specs: 10 to 50ms
-  ENUM_DEBOUNCING_DELAY_MS = 450, // when plug/unplug a device, physical connection can be bouncing and may
+  ENUM_DEBOUNCING_DELAY_MS = 100, // when plug/unplug a device, physical connection can be bouncing and may
                                   // generate a series of attach/detach event. This delay wait for stable connection
 };
 
